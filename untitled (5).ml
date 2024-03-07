@@ -37,9 +37,15 @@ let affiche_plateau plt =
     print_endline ""
   done;;
 
+let plateau = creer_plateau ligne colonne
 let last = ref 0;;
 
-let jouer cell_idx = ;;
+let jouer plt idx = 
+  plt.(3)<-Cell(5, Checked);
+  (affiche_plateau plt);;
+
+jouer plateau 4;;
+
 
 affiche_plateau (creer_plateau ligne colonne);;
 
